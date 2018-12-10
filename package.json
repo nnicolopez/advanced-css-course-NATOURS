@@ -1,0 +1,22 @@
+{
+  "name": "course-css-first-page",
+  "version": "1.0.0",
+  "description": "README",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "node-sass -w sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnicolopez/course-css-first-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nnicolopez/course-css-first-page/issues"
+  },
+  "homepage": "https://github.com/nnicolopez/course-css-first-page#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
