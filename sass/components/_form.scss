@@ -79,15 +79,12 @@
         top: -.5rem;
 
         &::after {
+            @include absoluteCenter;
             content: "";
             display: block;
             height: 1.2rem;
             width: 1.2rem;
             border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             background-color: $color-primary;
             opacity: 0;
             transition: opacity .2s;
