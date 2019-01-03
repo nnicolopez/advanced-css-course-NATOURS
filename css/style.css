@@ -532,7 +532,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 80%;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
@@ -541,17 +541,38 @@ body {
     transform: translate(-50%, -50%) scale(0.25);
     opacity: 0;
     transition: all .4s .2s; }
+    @media (max-width: 75em) {
+      .popup__content {
+        height: 60vh;
+        background-image: url("../img/nat-9.jpg");
+        background-size: cover;
+        background-position: center; } }
   .popup__left {
     width: 33.3333333%;
     display: table-cell; }
+    @media (max-width: 75em) {
+      .popup__left {
+        display: none; } }
   .popup__right {
     width: 66.6666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 75em) {
+      .popup__right {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8); } }
+    @media (max-width: 37.5em) {
+      .popup__right {
+        padding: 2rem 3rem; } }
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 75em) {
+      .popup__img {
+        display: none; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -561,6 +582,13 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 75em) {
+      .popup__text {
+        text-align: left; } }
+    @media (max-width: 56.25em) {
+      .popup__text {
+        column-count: unset;
+        text-align: center; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
